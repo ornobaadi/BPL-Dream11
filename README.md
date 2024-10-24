@@ -6,7 +6,7 @@ BPL DREAM 11 is an interactive React application that simulates the experience o
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-demo-link.netlify.app)
+[View Live Demo](https://dream11-ornobaadi.surge.sh/)
 
 ## ⚙️ Technologies Used
 
@@ -64,4 +64,4 @@ BPL DREAM 11 is an interactive React application that simulates the experience o
 
 ## 👨‍💻 Developer
 
-Made with 💖 by [Ornob Aadi]
+Made with 💖 by [Ornob Aadi](https://github.com/ornobaadi)
