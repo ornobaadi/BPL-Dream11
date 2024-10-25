@@ -1,10 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero.tsx'
 
 function App() {
   return (
     <>
-      <h1>Dream 11</h1>
+      <Header></Header>
+      <Hero></Hero>
     </>
   )
 }

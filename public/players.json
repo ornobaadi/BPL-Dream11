@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Viral Kohli",
+        "role": "All-Rounder",
+        "battingStyle": "Left-Hand-Bat",
+        "country": "India",
+        "price": 1500000,
+        "rating": 4.8,
+        "image": "https://i.ibb.co.com/WzCthMW/1690383625521-17kohli1-Ej8-N8-H.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Rohit Sharma",
+        "role": "Batsman",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "India",
+        "price": 1800000,
+        "rating": 4.9,
+        "image": "https://i.ibb.co.com/sQ3mKZ6/113209976.webp"
+    },
+    {
+        "id": 3,
+        "name": "David Warner",
+        "role": "Batsman",
+        "battingStyle": "Left-Hand-Bat",
+        "country": "Australia",
+        "price": 1600000,
+        "rating": 4.7,
+        "image": "https://i.ibb.co.com/ySDF8S7/David-Warner-1729596799980-1729596800493.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Joe Root",
+        "role": "Batsman",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "England",
+        "price": 1550000,
+        "rating": 4.6,
+        "image": "https://i.ibb.co.com/F6sCFXR/Untitled-design-12.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ben Stokes",
+        "role": "All-Rounder",
+        "battingStyle": "Left-Hand-Bat",
+        "country": "England",
+        "price": 1700000,
+        "rating": 4.9,
+        "image": "https://i.ibb.co.com/T8BndpH/c.webp"
+    },
+    {
+        "id": 6,
+        "name": "Kane Williamson",
+        "role": "Batsman",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "New Zealand",
+        "price": 1400000,
+        "rating": 4.5,
+        "image": "https://i.ibb.co.com/djKjYF0/Kane-Williamson-1024x768.webp"
+    },
+    {
+        "id": 7,
+        "name": "Steve Smith",
+        "role": "Batsman",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "Australia",
+        "price": 1650000,
+        "rating": 4.8,
+        "image": "https://i.ibb.co.com/ZJ5PQKG/steve-smith-07-03-2022.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Quinton de Kock",
+        "role": "Wicketkeeper-Batsman",
+        "battingStyle": "Left-Hand-Bat",
+        "country": "South Africa",
+        "price": 1500000,
+        "rating": 4.7,
+        "image": "https://i.ibb.co.com/Pgs7yk8/quinton-de-kock-361uofvid8etxpts.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Jasprit Bumrah",
+        "role": "Bowler",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "India",
+        "price": 1300000,
+        "rating": 4.8,
+        "image": "https://i.ibb.co.com/Sr65pJF/Epo-KMHy-Bvr.webp"
+    },
+    {
+        "id": 10,
+        "name": "Mitchell Starc",
+        "role": "Bowler",
+        "battingStyle": "Left-Hand-Bat",
+        "country": "Australia",
+        "price": 1400000,
+        "rating": 4.7,
+        "image": "https://i.ibb.co.com/5LJ1Js9/CRICKET-ODI-ENG-AUS-83-1727489179813-1727489192257.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Rashid Khan",
+        "role": "Bowler",
+        "battingStyle": "Right-Hand-Bat",
+        "country": "Afghanistan",
+        "price": 1200000,
+        "rating": 4.9,
+        "image": "https://i.ibb.co.com/17nxd5f/122334-mrzhodfazf-1561120923.jpg"
+    }
+]
