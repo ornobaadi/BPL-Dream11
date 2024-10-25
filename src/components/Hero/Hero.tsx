@@ -5,11 +5,11 @@ const Hero = () => {
         <div>
             <div
                 className="mx-auto mt-10 hero max-w-screen-2xl min-h-[600px] bg-black rounded-2xl overflow-hidden"
-                style={{ backgroundImage: `url('/src/assets/bg-shadow.png')` }}>
+                style={{ backgroundImage: `url('/assets/bg-shadow.png')` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-6xl">
-                        <img className='mx-auto mb-10' src="/src/assets/banner-main.png" alt="" />
+                        <img className='mx-auto mb-10' src="/assets/banner-main.png" alt="" />
                         <h1 className="mb-10 text-5xl font-bold">Assemble Your Ultimate Dream 11 Cricket Team</h1>
                         <p className="mb-10 text-2xl">
                             Beyond Boundaries Beyond Limits
