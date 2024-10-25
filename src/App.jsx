@@ -1,6 +1,7 @@
 import './App.css'
+import { Toaster } from 'react-hot-toast';
+import Hero from './components/Hero/Hero.jsx'
 import { useState } from 'react'
-import Available from './components/Available/Available.jsx'
 import Header from './components/Header/Header'
 import Players from './components/Players/Players.jsx'
 
@@ -15,9 +16,10 @@ function App() {
 
   return (
     <>
-      <Header  coins={coins} handleToAddCoin={handleToAddCoin}></Header>
-      <Available></Available>
-      <Players></Players>
+      <Header coins={coins} handleToAddCoin={handleToAddCoin}></Header>
+      <Hero handleToAddCoin={handleToAddCoin}></Hero>
+      <Players coins={coins} setCoins={setCoins}></Players>
+      <Toaster position="top-center" />
     </>
   )
 }

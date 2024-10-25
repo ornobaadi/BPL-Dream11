@@ -1,7 +1,13 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import { toast } from 'react-hot-toast';
 
 const Hero = ({handleToAddCoin}) => {
+
+    const handleClaimCredit = () => {
+        handleToAddCoin();
+        toast.success("Credit added to account");
+    };
+
     return (
         <div>
             <div
@@ -15,7 +21,7 @@ const Hero = ({handleToAddCoin}) => {
                         <p className="mb-10 text-2xl">
                             Beyond Boundaries Beyond Limits
                         </p>
-                        <button onClick={handleToAddCoin} className="btn btn-lg btn-warning text-xl">Claim Free Credit</button>
+                        <button onClick={handleClaimCredit} className="btn btn-lg btn-warning text-xl">Claim Free Credit</button>
                     </div>
                 </div>
             </div>
