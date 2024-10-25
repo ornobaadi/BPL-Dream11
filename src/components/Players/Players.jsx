@@ -7,18 +7,20 @@ const Players = () => {
 
     useEffect(() => {
         fetch('players.json')
-        .then(res => res.json())
-        .then(data => setPlayers(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setPlayers(data))
+    }, [])
 
     return (
-        <div>
-            {/* <h1 className="text-2xl">Players: {players.length}</h1> */}
-            <div className="player-container max-w-screen-2xl mt-4 mx-auto">
-            {
-                players.map(player => <Player key={player.id} 
-                player={player}></Player>)
-            }
+        <div className="max-w-screen-2xl  mx-auto">
+            <div>
+                <h1 className="text-2xl font-semibold">Available Players</h1>
+            </div>
+            <div className="player-container my-10 ">
+                {
+                    players.map(player => <Player key={player.id}
+                        player={player}></Player>)
+                }
             </div>
         </div>
     );

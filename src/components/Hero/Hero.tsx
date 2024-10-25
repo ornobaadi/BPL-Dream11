@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Hero = () => {
+const Hero = ({handleToAddCoin}) => {
     return (
         <div>
             <div
@@ -14,12 +15,16 @@ const Hero = () => {
                         <p className="mb-10 text-2xl">
                             Beyond Boundaries Beyond Limits
                         </p>
-                        <button className="btn btn-lg btn-warning text-xl">Claim Free Credit</button>
+                        <button onClick={handleToAddCoin} className="btn btn-lg btn-warning text-xl">Claim Free Credit</button>
                     </div>
                 </div>
             </div>
         </div>
     );
+};
+
+Hero.propTypes = {
+    handleToAddCoin: PropTypes.func.isRequired,
 };
 
 export default Hero;
