@@ -1,10 +1,11 @@
-import './App.css'
+import './App.css';
 import { Toaster } from 'react-hot-toast';
-import Hero from './components/Hero/Hero.jsx'
-import { useState } from 'react'
-import Header from './components/Header/Header'
-import Players from './components/Players/Players.jsx'
+import Hero from './components/Hero/Hero.jsx';
+import { useState } from 'react';
+import Header from './components/Header/Header';
+import Players from './components/Players/Players.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import Newsletter from './components/Newsletter/Newsletter.jsx';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -14,16 +15,19 @@ function App() {
     setCoins(newCoins);
   };
 
-
   return (
-    <>
-      <Header coins={coins} handleToAddCoin={handleToAddCoin}></Header>
-      <Hero handleToAddCoin={handleToAddCoin}></Hero>
-      <Players coins={coins} setCoins={setCoins}></Players>
+    <div className="relative">
+      <Header coins={coins} handleToAddCoin={handleToAddCoin} />
+      <Hero handleToAddCoin={handleToAddCoin} />
+      <div className="pb-32">
+        <Players coins={coins} setCoins={setCoins} />
+      </div>
+
+      <Newsletter />
+      <Footer />
       <Toaster position="top-center" />
-      <Footer></Footer>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

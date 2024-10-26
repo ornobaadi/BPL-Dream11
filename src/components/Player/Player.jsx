@@ -6,8 +6,6 @@ import './Player.css';
 const Player = ({ player, onSelect }) => {
     const { name, image, country, role, battingStyle, rating, price } = player;
 
-
-
     return (
         <div className='border border-gray-300 p-5 rounded-xl'>
             <img className='rounded-xl mb-3 object-cover w-[100%] h-[50%]' src={image} alt="" />
@@ -37,7 +35,6 @@ const Player = ({ player, onSelect }) => {
                 <p className='font-bold'>Price: ${price}</p>
                 <button onClick={() => onSelect(player)} className='btn btn-outline hover:btn-neutral'>Choose Player</button>
             </div>
-            
         </div>
     );
 };

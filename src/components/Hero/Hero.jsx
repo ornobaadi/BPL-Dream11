@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import { toast } from 'react-hot-toast';
 
-const Hero = ({handleToAddCoin}) => {
+const Hero = ({ handleToAddCoin }) => {
 
     const handleClaimCredit = () => {
         handleToAddCoin();
         toast.success("Credit added to account");
     };
-
     return (
         <div>
             <div

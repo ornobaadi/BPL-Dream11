@@ -68,7 +68,7 @@ const Players = ({ coins, setCoins }) => {
                 </div>
             </div>
 
-            <div className={`my-5 ${view === "available" ? "player-container" : ""}`}>
+            <div className={`my-20 ${view === "available" ? "player-container" : ""}`}>
                 {view === "available" ? (
                     players.map(player => (
                         <Player

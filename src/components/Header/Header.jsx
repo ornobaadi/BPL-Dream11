@@ -13,14 +13,12 @@ const Header = ({ coins }) => {
                         <li className='text-lg'><a>Fixture</a></li>
                         <li className='text-lg'><a>Teams</a></li>
                         <li className='text-lg'><a>Schedules</a></li>
-
-                        <button className="btn border-1 text-lg border-gray-200">{coins} Coin <span><img src="/assets/dollar 1.png" alt="" /></span></button> 
+                        <button className="btn border-1 text-lg border-gray-200">{coins} Coin <span><img src="/assets/dollar 1.png" alt="" /></span></button>
                     </ul>
                 </div>
             </div>
-            
         </div>
-    ); 
+    );
 };
 
 Header.propTypes = {
