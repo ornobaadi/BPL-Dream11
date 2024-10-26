@@ -9,7 +9,7 @@ const Player = ({ player, onSelect }) => {
 
 
     return (
-        <div className='player'>
+        <div className='border border-gray-300 p-5 rounded-xl'>
             <img className='rounded-xl mb-3 object-cover w-[100%] h-[50%]' src={image} alt="" />
             <div className='flex gap-3'>
                 <p className='text-3xl'><IoMdPerson /></p>

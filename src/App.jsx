@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero.jsx'
 import { useState } from 'react'
 import Header from './components/Header/Header'
 import Players from './components/Players/Players.jsx'
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <Hero handleToAddCoin={handleToAddCoin}></Hero>
       <Players coins={coins} setCoins={setCoins}></Players>
       <Toaster position="top-center" />
+      <Footer></Footer>
     </>
   )
 }
