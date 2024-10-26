@@ -53,7 +53,9 @@ const Players = ({ coins, setCoins }) => {
     return (
         <div className="max-w-screen-2xl mx-auto">
             <div className="flex justify-between items-center my-10">
-                <h1 className="text-2xl font-semibold">Available Players</h1>
+                <h1 className="text-2xl font-semibold">
+                    {view === "available" ? "Available Players" : `Selected Players (${selectedPlayers.size} / 6)`}
+                </h1>
                 <div className="flex gap-2">
                     <button
                         onClick={() => setView("available")}

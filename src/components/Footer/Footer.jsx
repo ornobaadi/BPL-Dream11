@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <div>
             <div className="flex justify-center bg-[#06091A] pt-60 pb-10">
-                <img src="./../../../public/assets/logo-footer.png" alt="Footer Logo" />
+                <img src="/assets/logo-footer.png" alt="Footer Logo" />
             </div>
             <div className="footer bg-[#06091A] text-white p-10 justify-around">
                 <nav className="w-80 text-gray-400">
@@ -37,7 +37,6 @@ const Footer = () => {
             </div>
 
             <hr className="border-gray-600" />
-            
             <div className="bg-[#06091A] text-gray-400 text-center py-10">
                 <p>@2024 Your Company All Rights Reserved.</p>
             </div>
