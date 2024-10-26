@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div>
+        <footer>
             <div className="flex justify-center bg-[#06091A] pt-60 pb-10">
                 <img src="/assets/logo-footer.png" alt="Footer Logo" />
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="bg-[#06091A] text-gray-400 text-center py-10">
                 <p>@2024 Your Company All Rights Reserved.</p>
             </div>
-        </div>
+        </footer>
     );
 };
 

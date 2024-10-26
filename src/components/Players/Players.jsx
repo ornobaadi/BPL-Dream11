@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Player from "../Player/Player";
-import './Players.css';
+import PropTypes from 'prop-types';
 import { toast } from 'react-hot-toast';
 import { CgRemove } from "react-icons/cg";
-import PropTypes from 'prop-types';
+import Player from "../Player/Player";
+import './Players.css';
 
 const Players = ({ coins, setCoins }) => {
     const [players, setPlayers] = useState([]);
@@ -21,32 +21,29 @@ const Players = ({ coins, setCoins }) => {
         const { id, name, price } = player;
 
         if (selectedPlayers.has(id)) {
-            toast.error(`${name} has already been selected!`);
-            return;
+            return toast.error(`${name} has already been selected!`);
         }
         if (selectedPlayers.size >= 6) {
-            toast.error("You can only select up to 6 players.");
-            return;
+            return toast.error("You can only select up to 6 players.");
         }
         if (coins < price) {
-            toast.error("Not enough credit. Please add some credit.");
-            return;
+            return toast.error("Not enough credit. Please add some credit.");
         }
 
-        setCoins(prevCoins => prevCoins - price);
-        setSelectedPlayers(prevSelected => new Set(prevSelected).add(id));
+        setCoins(coins - price);
+        setSelectedPlayers(new Set(selectedPlayers).add(id));
         toast.success(`${name} has been chosen!`);
     };
 
     const handlePlayerRemove = (player) => {
         const { id, name, price } = player;
 
-        setSelectedPlayers(prevSelected => {
-            const updatedSet = new Set(prevSelected);
+        setSelectedPlayers(prev => {
+            const updatedSet = new Set(prev);
             updatedSet.delete(id);
             return updatedSet;
         });
-        setCoins(prevCoins => prevCoins + price);
+        setCoins(coins + price);
         toast.success(`${name} has been removed from your team.`);
     };
 
@@ -96,17 +93,13 @@ const Players = ({ coins, setCoins }) => {
                                             <p>Price: ${player.price}</p>
                                         </div>
                                     </div>
-                                    <button
-                                        onClick={() => handlePlayerRemove(player)}
-                                        className="btn btn-outline btn-sm">
+                                    <button onClick={() => handlePlayerRemove(player)} className="btn btn-outline btn-sm">
                                         <CgRemove /> Remove
                                     </button>
                                 </div>
                             );
                         })}
-                        <button
-                            onClick={() => setView("available")}
-                            className="btn btn-success text-white mt-4">
+                        <button onClick={() => setView("available")} className="btn btn-success text-white mt-4">
                             Add More Players
                         </button>
                     </>

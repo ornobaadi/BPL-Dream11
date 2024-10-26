@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative px-4 lg:px-0">
       <Header coins={coins} handleToAddCoin={handleToAddCoin} />
       <Hero handleToAddCoin={handleToAddCoin} />
       <div className="pb-32">
@@ -24,8 +24,8 @@ function App() {
       </div>
 
       <Newsletter />
-      <Footer />
       <Toaster position="top-center" />
+      <Footer className="px-0 lg:px-0" />
     </div>
   );
 }

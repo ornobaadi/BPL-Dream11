@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "name": "Joe Root",
+        "name": "Ben Stokes ",
         "role": "Batsman",
         "battingStyle": "Right-Hand-Bat",
         "country": "England",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "name": "Ben Stokes",
+        "name": "Joe Root",
         "role": "All-Rounder",
         "battingStyle": "Left-Hand-Bat",
         "country": "England",
