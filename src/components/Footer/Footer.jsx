@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="flex justify-center bg-[#06091A] pt-60 pb-10">
                 <img src="/assets/logo-footer.png" alt="Footer Logo" />
             </div>
-            <div className="footer bg-[#06091A] text-white p-10 justify-around">
+            <div className="footer bg-[#06091A] text-white p-5 lg:p-10 justify-around">
                 <nav className="w-80 text-gray-400">
                     <h6 className="text-lg text-white font-bold">About Us</h6>
                     <p>We are a passionate team dedicated to providing the best services to our customers.</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                         <p className="label-text mb-5 text-gray-400 w-60">
                             Subscribe to our newsletter for the latest updates.
                         </p>
-                        <div className="join">
+                        <div className="flex flex-col lg:flex-row gap-3">
                             <input
                                 type="text"
                                 placeholder="Enter your email"
