@@ -52,19 +52,21 @@ const Players = ({ coins, setCoins }) => {
 
     return (
         <div className="max-w-screen-2xl mx-auto">
-            <div className="flex justify-between items-center my-10">
+            <div className="flex flex-col sm:flex-row justify-between items-center my-10">
                 <h1 className="text-2xl font-semibold">
                     {view === "available" ? "Available Players" : `Selected Players (${selectedPlayers.size} / 6)`}
                 </h1>
-                <div className="flex gap-2">
+                <div className="flex gap-2 w-2/3 sm:w-auto flex-col sm:flex-row mt-4 sm:mt-0">
                     <button
                         onClick={() => setView("available")}
-                        className={`btn ${view === "available" ? "btn-success text-white" : "btn-outline"}`}>
+                        className={`btn ${view === "available" ? "btn-success text-white" : "btn-outline"}`}
+                    >
                         Available
                     </button>
                     <button
                         onClick={() => setView("selected")}
-                        className={`btn ${view === "selected" ? "btn-success text-white" : "btn-outline"}`}>
+                        className={`btn ${view === "selected" ? "btn-success text-white" : "btn-outline"}`}
+                    >
                         Selected ({selectedPlayers.size})
                     </button>
                 </div>

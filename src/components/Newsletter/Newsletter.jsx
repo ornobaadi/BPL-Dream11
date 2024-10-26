@@ -3,7 +3,7 @@ const Newsletter = () => {
         <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl p-16 bg-white rounded-lg shadow-lg border border-gray-200 z-10">
             <h2 className="text-2xl font-bold text-center mb-2">Subscribe to our Newsletter</h2>
             <p className="text-center text-gray-500 mb-4">Get the latest updates and news right in your inbox!</p>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col lg:flex-row gap-3">
                 <input
                     type="email"
                     placeholder="Enter your email"
